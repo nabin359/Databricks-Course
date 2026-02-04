@@ -1,1 +1,31 @@
+Data Ingestion With Lakeflow Connect
+
+This is the third course. 
+
+What is lake flow connect?
+
+Three injection types:
+Upload Files. Into a table
+Standard Connectors: 
+
+Batch: Repeate and injest
+
+Incremental Batch: Only new data is ingested  spark.readStream(
+
+Streaming: Contiously load data. Near real time
+
+
+Delta Lake Review:
+
+Delta is an open source to read and write data on cloud. 
+
+Demonstration:
+
+show 
+describe
+describe table extended
+
+describe volume: volume for unstructure data. any file images, movies etc. 
+
+list 
 
