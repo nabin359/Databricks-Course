@@ -37,4 +37,24 @@ Copy Into
 Auto Loader
 
 
+From Lab: Very Useful
+
+From First Lab:
+values(DA.schema_name)
+
+show schemas in Catalog
+
+Describe Schema Extended Identifier(DA.schema_name)
+
+Describe Table Extended mydeltatable
+
+Describe Volume
+
+List
+
+From Second Lab:
+
+Create table as (CTAS)
+Copy Into
+
 
