@@ -57,4 +57,47 @@ From Second Lab:
 Create table as (CTAS)
 Copy Into
 
+List '/Volume/catalog/schema/volume/volumefolder
+
+List '/Volume/dbacademy_ecommerce/v01/raw/users-historical'
+
+Select * From parquet.List '/Volume/dbacademy_ecommerce/v01/raw/users-historical'
+
+
+Select * 
+From read_files('/Volume/dbacademy_ecommerce/v01/raw/users-historical',
+    format => 'parquet'
+)
+Limit 10
+
+
+Drop Table if Exist abc
+
+create table abc
+select *
+From read_files('/Volume/dbacademy_ecommerce/v01/raw/users-historical',
+    format => 'parquet'
+)
+
+
+
+Copy Into abc
+From '/Volume/dbacademy_ecommerce/v01/raw/users-historical'
+FileFormat = parquet
+Copy_options ('mergeSchema' = 'true);
+
+
+Creating Streaming Table with Autoloader:
+
+Select * 
+From read_files('/Volume/dbacademy_ecommerce/v01/raw/users-historical',
+    format => 'csv',
+    sep => '|',
+    header => true
+);
+
+
+
+
+
 
